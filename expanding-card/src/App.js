@@ -2,6 +2,8 @@ import {motion} from 'framer-motion';
 import { useState } from 'react';
 
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="App">
       <motion.div className="card">
