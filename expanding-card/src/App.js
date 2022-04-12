@@ -17,7 +17,11 @@ function App() {
 
         <motion.h2 layout="position">Framer Motion 🚀</motion.h2>
         {isOpen && (
-        <motion.div className='expand'>
+        <motion.div 
+          initial={{opacity: 0}} 
+          animate={{opacity: 1}} 
+          transition={{duration: 1}}
+          className='expand'>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolorum obcaecati sunt nulla molestiae rem ratione veniam odit dignissimos? Quisquam.</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, tempora?</p>
           <button>Hello</button>
