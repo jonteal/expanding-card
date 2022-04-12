@@ -6,8 +6,8 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="App">
-      <motion.div onClick={() => setIsOpen(!isOpen)} className="card">
-        <motion.h2>Framer Motion 🚀</motion.h2>
+      <motion.div layout onClick={() => setIsOpen(!isOpen)} className="card">
+        <motion.h2 layout="position">Framer Motion 🚀</motion.h2>
         {isOpen && (
         <motion.div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolorum obcaecati sunt nulla molestiae rem ratione veniam odit dignissimos? Quisquam.</p>
