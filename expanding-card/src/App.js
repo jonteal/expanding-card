@@ -6,7 +6,15 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="App">
-      <motion.div transition={{layout: {duration: 1, type: "spring"}}} layout onClick={() => setIsOpen(!isOpen)} className="card">
+
+      <motion.div 
+        transition={{layout: {duration: 1, type: "spring"}}} 
+        layout 
+        onClick={() => setIsOpen(!isOpen)} 
+        className="card"
+        style={{borderRadius: "1rem", boxShadow: '0px 10px 30px rgba(0,0,0,0.5'}}
+        >
+
         <motion.h2 layout="position">Framer Motion 🚀</motion.h2>
         {isOpen && (
         <motion.div className='expand'>
